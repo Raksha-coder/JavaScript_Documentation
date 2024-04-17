@@ -1,0 +1,4 @@
+the ability of a function to acces variable and function that are 
+lexicallly out of its scope are called closure.
+
+closure are created whenever a new function is created.
