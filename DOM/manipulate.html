@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>heading</h1>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+
+    <ul>
+        <li class="item">item1</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+    </ul>
+
+
+    <script>
+        // var doc = document.querySelector("h1");
+        // var li = document.querySelector("li");
+
+        // doc.style.border = "5px solid blue";
+        // doc.style.borderRadius = "10px";
+        // doc.style.fontSize = "25px";
+        // li.style.visibility = "hidden";
+
+        var list = document.querySelectorAll(".item");
+
+        // list[0].style.color = "red";
+        // list[1].style.color = "red";
+        // list[2].style.color = "red";
+
+        list.forEach(function(item){
+            item.style.color = "blue"
+        });
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulate text and attributes</title>
+</head>
+<body>
+    <h1 class="head">heading Tag</h1>
+    <a href="www.google.com">click Here</a>
+
+    <p class="paragraph-class"></p>
+
+
+    <p id="p"><strong>innerHTML</strong></p>
+    <P id="text">TEXT CONTENT</P>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let heading = document.querySelector("h1");
+        let link = document.querySelector("a");
+        let para = document.querySelector("p");
+       
+
+
+
+
+
+
+
+
+        //🍅classList
+        console.log(para.classList);
+        para.classList.add("para");
+        para.classList.remove("paragraph-class");
+        console.log(para.getAttribute("class"));
+
+
+
+
+
+
+
+         //🍅class and id property are attribute
+        console.log(heading.attributes);
+
+
+
+
+
+
+
+        //🍅will give value of class and id
+        //pass name of the attribute
+        console.log(heading.getAttribute("class")); 
+        console.log(link.getAttribute("href"));
+
+
+
+
+
+
+
+        //🍅to set the value
+        link.setAttribute("href","www.prepbyte.com");
+        console.log(link.getAttribute("href"));
+
+
+
+
+
+
+
+
+
+
+
+
+    /*------------now how to change text   -------------*/
+    
+
+    //🌹difference between innerHTML and textContent;
+    let chng = document.querySelectorAll("p")[1];
+    let text = document.querySelectorAll("p")[2];
+
+
+    
+
+
+
+
+
+    //🌟innerHTML = can change the html tag also
+    console.log(chng.innerHTML);
+
+    //🌟textContent = can change only text 
+    console.log(chng.textContent);
+
+
+    
+
+    chng.innerHTML = `<i>DONE CHANGED</i>`;
+    text.textContent = `Done Change`;
+
+    //🌟innerText = it will give deep down text also (<p> text1 <strong> text2 </strong></p>)
+    //ans   == text1 text2
+    //similar as textContent 
+
+
+    </script>
+</body>
+</html>
+
+
+

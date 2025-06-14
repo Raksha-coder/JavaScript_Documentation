@@ -1,0 +1,129 @@
+<!--user Interface-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .page-head{
+                color: red;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        
+    <!-----------🌋 Events ------------>
+
+    <h1 class="page-head">The Awesomeness of Human Mind and Peace</h1>
+    <button>Click This To See</button>
+    <button>Appear second</button>
+
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo, 
+        natus quam consequuntur quos, ducimus ratione eius iste repellendus
+         explicabo delectus officia rerum quod distinctio accusantium nobis 
+         cupiditate dolorum molestias.</p>
+    
+    <ul>
+        <li class="list-item">list one</li>
+        <li class="list-item">list two</li>
+        <li class="list-item">list three</li>
+        <li class="list-item">list-four</li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-----------🌋 Javascript Part ------------>
+    <script>
+
+
+
+
+
+
+
+
+    //🏀
+    let heading = document.querySelector("h1");
+
+    //add event listener to tag
+    //need 2 parameter  == EventName , action to be happen
+
+    heading.addEventListener("mouseover",mouseover);
+
+    //to save time use function
+    function mouseover(){
+        heading.classList.toggle("page-head");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //🏀
+    let btn = document.querySelectorAll("button")[0];
+    btn.addEventListener("click",()=>{
+        document.querySelectorAll("button")[1].style.visibility = "hidden";
+    });
+
+
+
+
+
+
+
+    //on whole page
+    document.addEventListener("keydown",()=>{
+        document.querySelector("p").style.backgroundColor = "green";
+    });
+
+
+
+
+
+    //for multiple list
+    document.querySelectorAll(".list-item").forEach(function(listItem){
+        listItem.addEventListener("mouseover",()=>{
+            listItem.style.backgroundColor = "yellow";
+        });
+    });
+
+    </script>
+    </body>
+</html>

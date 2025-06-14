@@ -1,0 +1,14 @@
+
+<------* How to assign Array  *------>
+
+let arr = new Array(element0,element1,......elementN);
+let arr = Array(e0,e1,e2....eN);
+let arr = [e0,e1,e2..];
+
+
+<------* If we don't know Array length, Assign as following *------>
+
+let arr = new Array(arrayLength);
+let arr = Array(arrayLength);
+let arr = [];                      
+arr.length = 42;
